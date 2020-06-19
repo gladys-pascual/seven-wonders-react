@@ -6,10 +6,15 @@ import CardsList from './components/CardsList';
 import data from './data'
 
 const App = () => {
+
+  const handleClick = (wonderName) => {
+    alert(wonderName);
+  }
+
   return (
     <>
       <Title {...data} />
-      <CardsList {...data} />
+      <CardsList {...data} handleClick={handleClick} />
     </>
   );
 }

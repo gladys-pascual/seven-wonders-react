@@ -2,10 +2,12 @@ import React from 'react';
 import Card from './Card'
 
 const CardsList = (props) => {
-  console.log(props)
   return (
     <div className="CardsList">
-      {props.sevenWonders.map(info => <Card {...info} />)}
+      {props.sevenWonders.map(info => <Card {...info}
+        handleClick={props.handleClick}
+        key={info.name} />)}
+
     </div>
   );
 }

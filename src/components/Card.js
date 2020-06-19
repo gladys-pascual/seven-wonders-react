@@ -17,10 +17,8 @@ const Card = (props) => {
         <h2>{props.name}</h2>
         <p> Location: {props.location}</p>
         <p> Year: {props.year}</p>
-
       </div>
-
-      <button> Click me &#127758; </button>
+      <button onClick={() => props.handleClick(props.name)}> Click me &#127758; </button>
     </div>
   );
 }

@@ -1,15 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Title from './components/Title'
-import CardsList from './components/CardsList';
-import data from './data'
+import React from "react";
+import "./App.css";
+import Title from "./components/Title";
+import CardsList from "./components/CardsList";
+import data from "./data";
 
 const App = () => {
-
   const handleClick = (wonderName) => {
     alert(wonderName);
-  }
+  };
 
   return (
     <>
@@ -17,6 +15,6 @@ const App = () => {
       <CardsList {...data} handleClick={handleClick} />
     </>
   );
-}
+};
 
 export default App;
